@@ -6,8 +6,6 @@ import pickle
 
 filename = 'finalized_model.sav'
 model = pickle.load(open(filename, 'rb'))
-
-
     
 app = Flask(__name__)
 
@@ -38,5 +36,4 @@ def predict():
 
 
 if __name__ == '__main__':
-  
     app.run(debug=True)
